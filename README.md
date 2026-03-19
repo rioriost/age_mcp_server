@@ -174,17 +174,17 @@ And, you need to set `PGPASSWORD` env variable, or to [install Azure CLI](https:
 
 After saving `claude_desktop_config.json`, start Claude Desktop Client.
 
-![Show me graphs on the server](https://raw.githubusercontent.com/rioriost/homebrew-age-mcp-server/main/images/query_01.png)
-![Show me a graph schema of FROM_AGEFREIGHTER](https://raw.githubusercontent.com/rioriost/homebrew-age-mcp-server/main/images/query_02.png)
-![Pick up a customer and calculate the amount of its purchase.](https://raw.githubusercontent.com/rioriost/homebrew-age-mcp-server/main/images/query_03.png)
-![Find another customer buying more than Lisa](https://raw.githubusercontent.com/rioriost/homebrew-age-mcp-server/main/images/query_04.png)
-![OK. Please make a new graph named MCP_Test](https://raw.githubusercontent.com/rioriost/homebrew-age-mcp-server/main/images/query_05.png)
-![Make a node labeled 'Person' with properties, name=Rio, age=52](https://raw.githubusercontent.com/rioriost/homebrew-age-mcp-server/main/images/query_06.png)
-![Please make an another node labeled 'Company' with properties, name=Microsoft](https://raw.githubusercontent.com/rioriost/homebrew-age-mcp-server/main/images/query_07.png)
-![Can you put a relation, "Rio WORK at Microsoft"?](https://raw.githubusercontent.com/rioriost/homebrew-age-mcp-server/main/images/query_08.png)
-![Delete the graph, MCP_Test](https://raw.githubusercontent.com/rioriost/homebrew-age-mcp-server/main/images/query_09.png)
+![Show me graphs on the server](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_01.png)
+![Show me a graph schema of FROM_AGEFREIGHTER](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_02.png)
+![Pick up a customer and calculate the amount of its purchase.](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_03.png)
+![Find another customer buying more than Lisa](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_04.png)
+![OK. Please make a new graph named MCP_Test](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_05.png)
+![Make a node labeled 'Person' with properties, name=Rio, age=52](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_06.png)
+![Please make an another node labeled 'Company' with properties, name=Microsoft](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_07.png)
+![Can you put a relation, "Rio WORK at Microsoft"?](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_08.png)
+![Delete the graph, MCP_Test](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_09.png)
 
-![Claude on Windows](https://raw.githubusercontent.com/rioriost/homebrew-age-mcp-server/main/images/Claude_Win.png)
+![Claude on Windows](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/Claude_Win.png)
 
 ## Usage with Visual Studio Code
 
