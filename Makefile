@@ -20,4 +20,8 @@ build:
 
 formula:
 	mkdir -p "$(FORMULA_DIR)"
-	$(PYTHON) scripts/generate_formula.py --output "$(FORMULA_FILE)"
+	genformula \
+		--pyproject "$(REPO_ROOT)/pyproject.toml" \
+		--install-mode advanced \
+		--source-subdir . \
+		--output "$(FORMULA_FILE)"
