@@ -1,6 +1,6 @@
 [project]
 name = "age-mcp-server"
-version = "0.2.44"
+version = "0.2.45"
 description = "Apache AGE MCP Server"
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.13"
@@ -12,7 +12,7 @@ dependencies = [
     "agefreighter>=1.0.33",
     "mcp>=1.26.0",
     "ply>=3.11",
-    "psycopg[binary]>=3.3.3",
+    "psycopg>=3.3.3",
     "psycopg-pool>=3.3.0",
 ]
 

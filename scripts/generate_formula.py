@@ -26,10 +26,6 @@ DEFAULT_OUTPUT = ROOT_DIR / "Formula" / "age-mcp-server.rb"
 DEFAULT_PYTHON = "python@3.13"
 
 SKIP_RESOURCE_PACKAGES = {
-    "psycopg",
-    "psycopg-binary",
-    "psycopg-pool",
-    "mcp",
     "python",
     "pip",
     "setuptools",
@@ -297,7 +293,6 @@ def render_formula(
   depends_on "{python_formula}"{resources_section}
   def install
     virtualenv_install_with_resources
-    system libexec/"bin/python", "-m", "pip", "install", "psycopg[binary,pool]", "mcp"
   end
 
   test do
