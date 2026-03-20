@@ -52,9 +52,8 @@ brew intall visual-studio-code
 - with brew
 
 ```bash
-brew tap rioriost/age-mcp-server
-brew install age-mcp-server
-```
+brew tap rioriost/tap
+brew install age_mcp_server
 
 - with uv
 
@@ -63,7 +62,7 @@ uv init your_project
 cd your_project
 uv venv
 source .venv/bin/activate
-uv add age-mcp-server
+uv add age_mcp_server
 ```
 
 - with python venv on macOS / Linux
@@ -73,7 +72,7 @@ mkdir your_project
 cd your_project
 python3 -m venv .venv
 source .venv/bin/activate
-python3 -m pip install age-mcp-server
+python3 -m pip install age_mcp_server
 ```
 
 - with python venv on Windows
@@ -83,7 +82,7 @@ mkdir your_project
 cd your_project
 python -m venv venv
 .\venv\Scripts\activate
-python -m pip install age-mcp-server
+python -m pip install age_mcp_server
 ```
 
 ## Usage with Claude
@@ -96,13 +95,13 @@ You need to create a new `claude_desktop_config.json` under `%APPDATA%\Claude`.
 
 - Homebrew on macOS
 
-Homebrew installs `age-mcp-server` into $PATH.
+Homebrew installs `age_mcp_server` into $PATH.
 
 ```json
 {
   "mcpServers": {
-    "age-manager": {
-      "command": "age-mcp-server",
+    "age_manager": {
+      "command": "age_mcp_server",
       "args": [
         "--pg-con-str",
         "host=your_server.postgres.database.azure.com port=5432 dbname=postgres user=your_username password=your_password",
@@ -119,13 +118,13 @@ On macOS:
 ```json
 {
   "mcpServers": {
-    "age-manager": {
+    "age_manager": {
       "command": "/Users/your_username/.local/bin/uv",
       "args": [
         "--directory",
         "/path/to/your_project",
         "run",
-        "age-mcp-server",
+        "age_mcp_server",
         "--pg-con-str",
         "host=your_server.postgres.database.azure.com port=5432 dbname=postgres user=your_username password=your_password",
       ]
@@ -139,13 +138,13 @@ On Windows:
 ```json
 {
   "mcpServers": {
-    "age-manager": {
+    "age_manager": {
       "command": "C:\\Users\\USER\\.local\\bin\\uv.exe",
       "args": [
         "--directory",
         "C:\\path\\to\\your_project",
         "run",
-        "age-mcp-server",
+        "age_mcp_server",
         "--pg-con-str",
         "host=your_server.postgres.database.azure.com port=5432 dbname=postgres user=your_username password=your_password",
       ]
@@ -159,7 +158,7 @@ If you need to hide the password or to use Entra ID, you can set `--pg-con-str` 
 ```
 {
   "mcpServers": {
-    "age-manager": {
+    "age_manager": {
         ...
         "--pg-con-str",
         "host=your_server.postgres.database.azure.com port=5432 dbname=postgres user=your_username",
@@ -174,17 +173,17 @@ And, you need to set `PGPASSWORD` env variable, or to [install Azure CLI](https:
 
 After saving `claude_desktop_config.json`, start Claude Desktop Client.
 
-![Show me graphs on the server](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_01.png)
-![Show me a graph schema of FROM_AGEFREIGHTER](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_02.png)
-![Pick up a customer and calculate the amount of its purchase.](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_03.png)
-![Find another customer buying more than Lisa](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_04.png)
-![OK. Please make a new graph named MCP_Test](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_05.png)
-![Make a node labeled 'Person' with properties, name=Rio, age=52](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_06.png)
-![Please make an another node labeled 'Company' with properties, name=Microsoft](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_07.png)
-![Can you put a relation, "Rio WORK at Microsoft"?](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_08.png)
-![Delete the graph, MCP_Test](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/query_09.png)
+![Show me graphs on the server](https://raw.githubusercontent.com/rioriost/age_mcp_server/main/images/query_01.png)
+![Show me a graph schema of FROM_AGEFREIGHTER](https://raw.githubusercontent.com/rioriost/age_mcp_server/main/images/query_02.png)
+![Pick up a customer and calculate the amount of its purchase.](https://raw.githubusercontent.com/rioriost/age_mcp_server/main/images/query_03.png)
+![Find another customer buying more than Lisa](https://raw.githubusercontent.com/rioriost/age_mcp_server/main/images/query_04.png)
+![OK. Please make a new graph named MCP_Test](https://raw.githubusercontent.com/rioriost/age_mcp_server/main/images/query_05.png)
+![Make a node labeled 'Person' with properties, name=Rio, age=52](https://raw.githubusercontent.com/rioriost/age_mcp_server/main/images/query_06.png)
+![Please make an another node labeled 'Company' with properties, name=Microsoft](https://raw.githubusercontent.com/rioriost/age_mcp_server/main/images/query_07.png)
+![Can you put a relation, "Rio WORK at Microsoft"?](https://raw.githubusercontent.com/rioriost/age_mcp_server/main/images/query_08.png)
+![Delete the graph, MCP_Test](https://raw.githubusercontent.com/rioriost/age_mcp_server/main/images/query_09.png)
 
-![Claude on Windows](https://raw.githubusercontent.com/rioriost/age-mcp-server/main/images/Claude_Win.png)
+![Claude on Windows](https://raw.githubusercontent.com/rioriost/age_mcp_server/main/images/Claude_Win.png)
 
 ## Usage with Visual Studio Code
 
@@ -199,13 +198,13 @@ Edit the settings.json as followings:
     "mcp": {
         "inputs": [],
         "servers": {
-            "age-manager": {
+            "age_manager": {
             "command": "/Users/your_user_name/.local/bin/uv",
             "args": [
                 "--directory",
                 "/path/to/your_project",
                 "run",
-                "age-mcp-server",
+                "age_mcp_server",
                 "--pg-con-str",
                 "host=your_server.postgres.database.azure.com port=5432 dbname=postgres user=your_username password=your_password",
                 "--debug"
@@ -233,8 +232,8 @@ AGE-MCP-Server prohibits write operations by default for safety. If you want to 
 ```json
 {
   "mcpServers": {
-    "age-manager": {
-      "command": "age-mcp-server",
+    "age_manager": {
+      "command": "age_mcp_server",
       "args": [
         "--pg-con-str",
         "host=your_server.postgres.database.azure.com port=5432 dbname=postgres user=your_username password=your_password",

@@ -6,7 +6,7 @@ PYTHON ?= python3
 
 DIST_DIR := $(REPO_ROOT)/dist
 FORMULA_DIR := $(REPO_ROOT)/Formula
-FORMULA_FILE := $(FORMULA_DIR)/age-mcp-server.rb
+FORMULA_FILE := $(FORMULA_DIR)/age_mcp_server.rb
 
 .PHONY: release-artifacts sync build formula
 

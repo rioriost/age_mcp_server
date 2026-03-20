@@ -1,6 +1,6 @@
 [project]
-name = "age-mcp-server"
-version = "0.2.46"
+name = "age_mcp_server"
+version = "0.2.47"
 description = "Apache AGE MCP Server"
 readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.13"
@@ -17,12 +17,12 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/rioriost/age-mcp-server"
-Issues = "https://github.com/rioriost/age-mcp-server/issues"
-Repository = "https://github.com/rioriost/age-mcp-server"
+Homepage = "https://github.com/rioriost/age_mcp_server"
+Issues = "https://github.com/rioriost/age_mcp_server/issues"
+Repository = "https://github.com/rioriost/age_mcp_server"
 
 [project.scripts]
-age-mcp-server = "age_mcp_server:main"
+age_mcp_server = "age_mcp_server:main"
 
 [project.optional-dependencies]
 test = [
