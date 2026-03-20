@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 import argparse
 import asyncio
 import logging
@@ -30,9 +27,7 @@ def main() -> None:
         default=False,
         help="Allow write operations",
     )
-    parser.add_argument(
-        "--debug", action="store_true", default=False, help="Enable debug logging"
-    )
+    parser.add_argument("--debug", action="store_true", default=False, help="Enable debug logging")
 
     args = parser.parse_args()
 
@@ -63,9 +58,7 @@ def main() -> None:
             ).strip()
 
     if not conn_dict["password"]:
-        print(
-            "Error: Could not find PGPASSWORD env var or Entra ID token to connect the server."
-        )
+        print("Error: Could not find PGPASSWORD env var or Entra ID token to connect the server.")
         sys.exit(1)
 
     asyncio.run(
