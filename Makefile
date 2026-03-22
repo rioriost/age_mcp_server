@@ -16,6 +16,7 @@ sync:
 	$(UV) sync --extra test --group dev
 
 build:
+	rm -rf "$(DIST_DIR)"
 	$(UV) build
 
 formula:

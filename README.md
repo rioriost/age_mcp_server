@@ -18,7 +18,6 @@ Apache AGE MCP Server
 - [Usage with Claude](#usage-with-claude)
 - [Usage with Visual Studio Code Insiders](#usage-with-visual-studio-code-insiders)
 - [Write Operations](#write-operations)
-- [Release Notes](#release-notes)
 - [For More Information](#for-more-information)
 - [License](#license)
 
@@ -52,8 +51,7 @@ brew intall visual-studio-code
 - with brew
 
 ```bash
-brew tap rioriost/tap
-brew install age_mcp_server
+brew intall rioriost/tap/age_mcp_server
 
 - with uv
 
